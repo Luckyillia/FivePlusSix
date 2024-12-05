@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             email = emailEditText.getText().toString().trim();
             pass = passEditText.getText().toString().trim();
             pass2 = pass2EditText.getText().toString().trim();
-            if(!email.equals("@")){
+            if(!email.contains("@")){
                 message.setText("Nieprawidlowy adres Email\n");
             } else if (!pass.equals(pass2)) {
                 message.setText("Hasla sie roznia\n");
